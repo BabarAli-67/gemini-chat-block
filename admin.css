@@ -1,0 +1,128 @@
+/**
+ * Admin styles for Gemini Chat Block
+ */
+
+.gemini-chat-block-preview {
+	margin-top: 30px;
+	padding: 20px;
+	background: #f9fafb;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+}
+
+.gemini-chat-block-preview h3 {
+	margin-top: 0;
+	margin-bottom: 16px;
+	color: #374151;
+}
+
+.gemini-chat-preview {
+	max-width: 400px;
+	height: 300px;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	background: white;
+	overflow: hidden;
+}
+
+.gemini-chat-preview .gemini-chat-header {
+	background: var(--primary-color, #2563eb);
+	color: white;
+	padding: 12px 16px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gemini-chat-preview .gemini-chat-title {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.gemini-chat-preview .gemini-chat-messages {
+	flex: 1;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	height: 200px;
+	overflow-y: auto;
+}
+
+.gemini-chat-preview .gemini-message {
+	display: flex;
+	max-width: 80%;
+}
+
+.gemini-chat-preview .user-message {
+	align-self: flex-end;
+	margin-left: auto;
+}
+
+.gemini-chat-preview .assistant-message {
+	align-self: flex-start;
+	margin-right: auto;
+}
+
+.gemini-chat-preview .gemini-message-content {
+	padding: 8px 12px;
+	border-radius: 8px;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.gemini-chat-preview .user-message .gemini-message-content {
+	background: var(--primary-color, #2563eb);
+	color: white;
+	border-bottom-right-radius: 4px;
+}
+
+.gemini-chat-preview .assistant-message .gemini-message-content {
+	background: #f3f4f6;
+	color: var(--text-color, #374151);
+	border-bottom-left-radius: 4px;
+	border: 1px solid #e5e7eb;
+}
+
+.gemini-chat-preview .gemini-chat-input-container {
+	padding: 12px 16px;
+	border-top: 1px solid #e5e7eb;
+	background: #f9fafb;
+}
+
+.gemini-chat-preview .gemini-chat-input-wrapper {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.gemini-chat-preview .gemini-chat-input {
+	flex: 1;
+	border: 1px solid #d1d5db;
+	border-radius: 6px;
+	padding: 8px 12px;
+	font-size: 13px;
+	background: white;
+}
+
+.gemini-chat-preview .gemini-chat-send {
+	background: var(--primary-color, #2563eb);
+	color: white;
+	border: none;
+	border-radius: 6px;
+	padding: 8px 12px;
+	font-size: 14px;
+	min-width: 36px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Range control value display */
+#border_radius_value {
+	font-weight: 500;
+	color: #374151;
+	margin-left: 8px;
+}

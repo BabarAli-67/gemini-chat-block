@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/gemini-chat-block",
+	"version": "0.1.0",
+	"title": "Gemini Chat Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Interactive AI Assistant chat block powered by Gemini 2.5 Flash.",
+	"example": {},
+	"attributes": {
+		"primaryColor": {
+			"type": "string",
+			"default": "#2563eb"
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"textColor": {
+			"type": "string",
+			"default": "#374151"
+		},
+		"borderRadius": {
+			"type": "number",
+			"default": 8
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "Ask me anything..."
+		},
+		"welcomeMessage": {
+			"type": "string",
+			"default": "Hello! I'm your AI Assistant. How can I help you today?"
+		}
+	},
+	"supports": {
+		"html": false,
+		"spacing": {
+			"padding": true,
+			"margin": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		}
+	},
+	"textdomain": "gemini-chat-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
